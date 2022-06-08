@@ -1,0 +1,30 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/edit.css}">
+    <title>Alter Country</title>
+</head>
+<body>
+    <h1>Alter info below:</h1>
+    <form action="#" th:action="@{/country/save}" th:object="${country}" method="POST" class="edit">
+      <input type="hidden" th:field="*{id}"><br>
+      <label>Country:</label>
+      <input type="text" th:field="*{a_country}"><br>
+      <h3 th:if="${#fields.hasErrors('a_country')}" th:errors="*{a_country}" th:errorClass="error" class="error">Error</h3></br>
+      <label>Capital:</label>
+      <input type="text" th:field="*{b_capital}"><br>
+      <h3 th:if="${#fields.hasErrors('b_capital')}" th:errors="*{b_capital}" th:errorClass="error" class="error">Error</h3></br>
+      <label>Currency:</label>
+      <input type="text" th:field="*{currency}"><br>
+      <h3 th:if="${#fields.hasErrors('currency')}" th:errors="*{currency}" th:errorClass="error" class="error">Error</h3></br>
+      <input type="submit" value="Done">
+    </form>
+    <div class="buttons">
+        <form th:action="@{/country}">
+            <input type="submit" value="Back" class="bottom_button"/>
+        </form>
+    </div>
+</body>
+</html>

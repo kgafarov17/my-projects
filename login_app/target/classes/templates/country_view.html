@@ -1,0 +1,44 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/table.css}">
+  <title>Country</title>
+</head>
+<body>
+    <div class="country_title">
+      <h1 th:text="${country.a_country} " class="country">Country View</h1>
+    </div>
+    <div class="table_div">
+      <table>
+        <thead>
+        <tr>
+          <th>Country</th>
+          <th>Capital</th>
+          <th>Currency</th>
+          <th class="links">Edit</th>
+          <th class="links">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td th:text="${country.a_country}">Country</td>
+          <td th:text="${country.b_capital}">Capital</td>
+          <td th:text="${country.currency}">Currency</td>
+          <td class="edit"><a th:href="@{/country/edit/{id}(id=${country.id})}"> Edit </a></td>
+          <td class="delete"><a th:href="@{/country/delete/{id}(id=${country.id})}">Delete</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="buttons">
+        <form th:action="@{/country}">
+          <input type="submit" value="Back" class="bottom_button"/>
+        </form>
+      <form th:action="@{/logout}" method="POST">
+        <input type="submit" value="Log Out" class="logout"/>
+      </form>
+    </div>
+</body>
+</html>

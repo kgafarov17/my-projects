@@ -1,0 +1,149 @@
+h1{
+    font-family: Copperplate Gothic;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-color: #1A1A1A;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px 20px;
+}
+
+.bottom_button  {
+    margin: 15px;
+    font-family: Copperplate Gothic;
+    border-radius: 25px;
+    text-size: 25px;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    width: 200px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.bottom_button:hover {
+    background-color: #fff;
+    color: #1A1A1A;
+}
+
+.logout  {
+    margin: 15px;
+    font-family: Copperplate Gothic;
+    border-radius: 25px;
+    text-size: 25px;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    width: 200px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.logout:hover {
+    background-color: #f50606;
+    color: #fff;
+}
+
+.table_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+    font-family: Copperplate Gothic;
+    font-weight: 500;
+    min-width: 600px;
+    min-height: 30px;
+    table-layout: fixed;
+}
+
+thead tr{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+th, td{
+    padding: 12px, 15px;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+}
+
+th.links, td.links, th.view, td.view, th.edit, td.edit, th.delete, td.delete{
+    width: 75px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.id th{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.id td{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+tbody tr{
+    border-bottom: 1px solid #f3f3f3;
+    color: grey;
+}
+
+tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}
+
+tbody tr:hover{
+    color: black;
+}
+
+.view a, .edit a, .delete a{
+    color: grey;
+}
+
+
+.view a:hover{
+    text-decoration: none;
+    color: #2E51A2;
+}
+
+.edit a:hover{
+    text-decoration: none;
+    color: #059862;
+}
+
+.delete a:hover{
+    text-decoration: none;
+    color: red;
+}
