@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/dbmain.css">
+    <title>Authors</title>
+</head>
+<body>
+    <h1>Authors</h1>
+    <div class="table_div">
+    <table>
+        <thead>
+        <tr>
+            <th class="id">ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Country</th>
+            <th class="links">View</th>
+            <th class="links">Edit</th>
+            <th class="links">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${authors.empty}">
+            <td> No data found….</td>
+        </tr>
+        <tr th:each="author : ${authors}">
+            <td class="id"><span th:text="${author.id}"> ID </span></td>
+            <td><span th:text="${author.a_firstName}"> Name </span></td>
+            <td><span th:text="${author.b_lastName}"> Surname </span></td>
+            <td><span th:text="${author.country}"> Country </span></td>
+            <td class="view"><a th:href="@{/author/{id}(id=${author.id})}"> View </a></td>
+            <td class="edit"><a th:href="@{/author/edit/{id}(id=${author.id})}"> Edit </a></td>
+            <td class="delete"><a th:href="@{/author/delete/{id}(id=${author.id})}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="buttons">
+        <button class="bottom_button"><a th:href="@{/}" class="button_link">Back</a></button>
+        <button class="bottom_button"><a th:href="@{/book}" class="button_link">Books</a></button>
+        <button class="submit_btn"><a th:href="@{/author/new}" class="button_link">Add</a></button>
+    </div>
+    <form th:action="@{/logout}" method="POST">
+    <input type="submit" value="Log Out"/>
+    </form>
+</body>
+</html>

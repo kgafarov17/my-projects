@@ -1,0 +1,39 @@
+
+
+Failed Feature that I want to finish in the future!!!!
+
+
+<!--
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    &lt;!&ndash;<link rel="stylesheet" type="text/css" th:href="@{/css/dbmain.css}">&ndash;&gt;
+    <title>Author</title>
+</head>
+<body>
+    <div class="author_title">
+        <h1 th:text="${author.a_firstName} " class="author_name">Author View </h1>
+        <h1 th:text="${author.b_lastName}" class="author_name">Author View</h1>
+    </div>
+    <div class="table_div">
+        <h5 type="text" th:field="${author.a_firstName}">BookName</h5><br>
+        <h5 type="text" th:field="${author.b_lastName}">Genre</h5>br>
+        <h5 type="text" th:field="${author.country}">Country</h5><br>
+        <form action="#" th:action="@{/author/newbook/{id}/{book_id}(id=${author.id}),(book_id=${book.id})}" th:object="${author}" method="POST">
+            <select>
+                <option th:each="book: ${books}"
+                        th:text="${book.a_bookName}"
+                        th:value="${book.id}"></option>
+            </select>
+            <input type="submit" value="Done">
+        </form>
+    </div>
+    <div class="buttons">
+        <button class="bottom_button"><a th:href="@{/}" class="button_link">Home</a></button>
+        <button class="bottom_button"><a th:href="@{/author}" class="button_link">Back</a></button>
+        <button class="bottom_button"><a th:href="@{/book}" class="button_link">Books</a></button>
+    </div>
+</body>
+</html>-->

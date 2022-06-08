@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+</head>
+<body>
+    <h1>Welcome to the Simple Spring Boot Application!</h1>
+    <h3>With the help of this app you can manage authors and books.</h3>
+    <div class="buttons">
+        <button><a th:href="@{/author}" class="bottom_buttons">Authors</a></button>
+        <button><a th:href="@{/book}" class="bottom_buttons">Books</a></button>
+    </div>
+    <h3>If you want to see Azerbaijani authors click <a th:href="@{/author/azerbaijan}" class="here">here</a>.</h3>
+    <h3>Fan of tragedies? Click <a th:href="@{/book/tragedy}" class="here">here</a>.</h3>
+</body>
+</html>

@@ -1,0 +1,52 @@
+h1{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+h3{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: black;
+    border: none;
+    width: 200px;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.bottom_buttons{
+    font-family: Verdana;
+    text-align: center;
+    text-color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.here a{
+    font-family: Verdana;
+    color: grey;
+}
+
+.here a:hover{
+    color: green;
+}

@@ -1,0 +1,24 @@
+h1{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 150px;
+    }
+h3{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 25px;
+}
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

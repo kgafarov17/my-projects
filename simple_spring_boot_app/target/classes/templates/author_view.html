@@ -1,0 +1,51 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/dbmain.css}">
+  <title>Author</title>
+</head>
+  <body>
+    <div class="author_title">
+      <h1 th:text="${author.a_firstName} " class="author_name">Author View </h1>
+      <h1 th:text="${author.b_lastName}" class="author_name">Author View</h1>
+    </div>
+    <div class="table_div">
+    <table>
+      <thead>
+      <tr>
+        <th class="id">ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Country</th>
+        <th>Books</th>
+        <th class="links">Edit</th>
+        <th class="links">Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="id"><span th:text="${author.id}"> ID </span></td>
+          <td th:text="${author.a_firstName}">Name</td>
+          <td th:text="${author.b_lastName}">Surname</td>
+          <td th:text="${author.country}">Country</td>
+          <td>
+            <select>
+              <option th:each="book: ${author.books}"
+                      th:text="${book.a_bookName}"
+                      th:value="${book.id}"></option>
+            </select>
+          </td>
+          <td class="edit"><a th:href="@{/author/edit/{id}(id=${author.id})}"> Edit </a></td>
+          <td class="delete"><a th:href="@{/author/delete/{id}(id=${author.id})}">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="buttons">
+      <button class="bottom_button"><a th:href="@{/author}" class="button_link">Back</a></button>
+      <button class="bottom_button"><a th:href="@{/}" class="button_link">Home</a></button>
+    </div>
+  </body>
+</html>

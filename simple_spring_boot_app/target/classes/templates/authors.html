@@ -1,0 +1,33 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+</head>
+<body>
+    <h1>Authors</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th> Firstname</th>
+            <th> Lastname</th>
+            <!--<th> View</th>
+            <th> Edit</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${authors.empty}">
+            <td> No data found….</td>
+        </tr>
+        <tr th:each="student : ${authors}">
+            <td><span th:text="${authors.firstName}"> Name </span></td>
+            <td><span th:text="${authors.lastName}"> Surname </span></td>
+            <!--<td><a th:href="@{/student/{id}(id=${student.id})}"> View </a></td>
+            <td><a th:href="@{/student/edit/{id}(id=${student.id})}"> Edit </a></td>-->
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

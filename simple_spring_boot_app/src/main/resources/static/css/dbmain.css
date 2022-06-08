@@ -1,0 +1,141 @@
+h1{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-right; 15px;
+}
+
+.author_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.blank_symbol{
+    colorL white;
+}
+
+h3{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: black;
+    border: none;
+    width: 150px;
+    height: 60px;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 25px;
+}
+
+.bottom_button:hover{
+    background-color: grey;
+}
+
+.button_link{
+    font-family: Verdana;
+    text-align: center;
+    text-color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.table_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit_btn:hover{
+    background-color:green;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+    font-family: Verdana;
+    min-width: 600px;
+    min-height: 30px;
+    table-layout: fixed;
+}
+
+thead tr{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+th, td{
+    padding: 12px, 15px;
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+}
+
+th.links, td.links, th.view, td.view, th.edit, td.edit, th.delete, td.delete{
+    width: 75px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.id th{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.id td{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+tbody tr{
+    border-bottom: 1px solid #f3f3f3;
+    color: grey;
+}
+
+tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}
+
+tbody tr:hover{
+    color: black;
+}
+
+.view a, .edit a, .delete a{
+    color: grey;
+}
+
+
+.view a:hover{
+    text-decoration: none;
+    color: #2E51A2;
+}
+
+.edit a:hover{
+    text-decoration: none;
+    color: #059862;
+}
+
+.delete a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+a

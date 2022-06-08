@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+    <link rel="stylesheet" type="text/css" href="css/dbmain.css">
+</head>
+<body>
+    <h1>Authors Database</h1>
+    <h3>Authors and writers are one of the most creative people that ever existed. Many people do not understand their significance for today's society.</h3>
+    <h5>By pressing "List" you can see and manage list of your favourite authors</h5>
+    <div class="buttons">
+        <button><a th:href="@{/}">Back</a></button>
+        <button><a th:href="@{/author/list}">Authors</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+az\edu\ada\wm2\simple_spring_boot_app\service\BookService.class
+az\edu\ada\wm2\simple_spring_boot_app\SimpleSpringBootAppApplication.class
+az\edu\ada\wm2\simple_spring_boot_app\bean\AuthorBean.class
+az\edu\ada\wm2\simple_spring_boot_app\entity\Book.class
+az\edu\ada\wm2\simple_spring_boot_app\service\AuthorService.class
+az\edu\ada\wm2\simple_spring_boot_app\controller\AuthorController.class
+az\edu\ada\wm2\simple_spring_boot_app\repository\AuthorRepository.class
+az\edu\ada\wm2\simple_spring_boot_app\bean\BookBean.class
+az\edu\ada\wm2\simple_spring_boot_app\controller\BookController.class
+az\edu\ada\wm2\simple_spring_boot_app\controller\HomeController.class
+az\edu\ada\wm2\simple_spring_boot_app\ServletInitializer.class
+az\edu\ada\wm2\simple_spring_boot_app\entity\Author.class
+az\edu\ada\wm2\simple_spring_boot_app\repository\BookRepository.class
+az\edu\ada\wm2\simple_spring_boot_app\controller\LoginController.class
